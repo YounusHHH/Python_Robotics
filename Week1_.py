@@ -1,0 +1,30 @@
+myVariable = 0
+
+def when_started1():
+    global myVariable
+    drivetrain.drive_for(FORWARD, 890, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 890, MM)
+    pen.move(DOWN)
+    pen.set_pen_color(BLACK)
+    drivetrain.drive_for(FORWARD, 800, MM)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 800, MM)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 800, MM)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 800, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    pen.move(UP)
+    drivetrain.drive_for(FORWARD, 190, MM)
+    pen.move(DOWN)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 390, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 390, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 390, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 390, MM)
+
+vr_thread(when_started1)
